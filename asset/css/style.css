@@ -160,6 +160,10 @@ input{
     padding-bottom: 150px;
     h1{
       font-size: 145px;
+
+      @media (max-width: 575.98px) {
+        font-size: 100px;
+      }
       
     }
     h3{
@@ -170,6 +174,10 @@ input{
       color: #fff;
       background-color: #E7272D;
       margin-left: 120px; 
+
+      @media (max-width: 575.98px) {
+        margin-left: 50px;
+      }
   }
 
   p{
@@ -225,6 +233,7 @@ input{
       @media (max-width: 767.98px) {
        width: 500px;
       }
+      
     }
   }
   .text-area{
@@ -303,6 +312,13 @@ input{
 }
 /* foo menu area start */
 .food-menu{
+
+    h2{
+      @media (max-width: 575.98px) {
+        margin-left: 30px;
+      }
+    }
+
     .specials-Menu{
      width: 900px;
       margin: 30px auto;
@@ -330,7 +346,9 @@ input{
             
           }
 
-
+        @media (max-width: 575.98px) {
+          margin-left: 30px;
+        }
         
       }
       /* responsive */
@@ -349,6 +367,11 @@ input{
        border: 1px solid #CCCCCC;
         border-radius: 10px;
         margin-top: 30px;
+        /* resfonsiv */
+        @media (max-width: 575.98px) {
+       width: 100%;
+       
+      }
 
         .text-area{
 
