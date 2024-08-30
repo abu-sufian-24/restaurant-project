@@ -149,7 +149,7 @@ input{
 
 /* banner */
 .banner{
-  background-image: url(../images/image\ 5\ \(1\).jpg);
+  background-image: url(../images/image5\(1\).jpg);
    background-repeat: no-repeat;
   background-size: cover;
   padding-top: 105px;
@@ -475,7 +475,7 @@ input{
 /* favorite area start */
  .favorite{
   padding: 60px 0;
-  background-image: url(../images/image\ 9.jpg);
+  background-image: url(../images/image9.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(5, 0, 0, 0.35);
