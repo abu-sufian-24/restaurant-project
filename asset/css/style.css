@@ -274,10 +274,7 @@ input{
        padding-right: 40px; 
 
       } 
-       /* @media (max-width: 575.98px) {
-       margin: 0;
-       padding: 0;
-      } */
+       
   }
   .same-style{
     h2{
@@ -321,6 +318,10 @@ input{
       @media (max-width: 991.98px) {
         width: 553px;
       }
+      @media (max-width: 575.98px) {
+        min-width: 200px;
+        margin-left: 0;
+      }
     }
     .strong-tag{
       max-width: 262px;
@@ -357,7 +358,13 @@ input{
       @media (max-width: 767.98px) {
         min-width: 400px;
       }
-      
+      @media (max-width: 575.98px) {
+        min-width: 300px;
+      }
+       @media (max-width: 575.98px) {
+        min-width: 200px;
+        margin-left: 0;
+      }
 
     }
 
@@ -381,6 +388,9 @@ input{
       }
       @media (max-width: 767.98px) {
        display: block;
+      }
+       @media (max-width: 575.98px) {
+        margin-left: 0;
       }
 
       }
@@ -430,11 +440,12 @@ input{
             
           }
 
-        @media (max-width: 575.98px) {
+         @media (max-width: 575.98px) {
           border: 1px solid  #CCCCCC;
-          margin-left: 100px;
+          margin-left: 60px;
+          font-size: 14px;
           
-         } 
+         }
         
       }
       /* responsive */
@@ -443,7 +454,7 @@ input{
         border: none;
       } 
         @media (max-width: 575.98px) {
-          width: 300px;
+          width: 250px;
           margin: 0;
           padding: 0;
           margin-bottom: 10px;
@@ -470,7 +481,7 @@ input{
             height: 55px;
             position: absolute;
             left: 0;
-            bottom: 200px;
+            bottom: 180px;
             border-top-right-radius: 10px;
 
             strong{
@@ -560,6 +571,10 @@ input{
               i{
                 font-size: 22px;
                 color: #E7272D;
+
+                 @media (max-width: 575.98px) {
+                  font-size: 18px;
+                }
                 
                        
                 }
@@ -570,6 +585,10 @@ input{
                 font-family: var(--body-font);
                 color: #E7272D;
                 margin: 10px 10px;
+
+                 @media (max-width: 575.98px) {
+                  font-size: 20px;
+                }
                 
               }
 
@@ -586,6 +605,10 @@ input{
               /* responsive */
               @media (max-width: 1199.98px) {
                 width: 250px;
+              }
+              @media (max-width: 575.98px) {
+                width: 200px;
+
               }
               
             }
@@ -625,6 +648,7 @@ input{
             line-height: 24px;
             font-weight: 300;
             text-align: center;
+            width: 300px;
         }
       }
     }
@@ -723,7 +747,7 @@ input{
 
   /* `sm` applies to x-small devices (portrait phones, less than 576px) */
     @media (max-width: 575.98px) {
-        margin-top: 40px;
+        margin-top: 30px;
     }
 
   .same-style{
@@ -731,8 +755,8 @@ input{
     h2{
       /* `sm` applies to x-small devices (portrait phones, less than 576px) */
         @media (max-width: 575.98px) {
-            font-size: 28px;
-            margin-bottom: 24px;
+            font-size: 24px;
+            margin-bottom: 15px;
         }
     }
     }
@@ -771,6 +795,10 @@ input{
       display: inline-block;
       width: 287px;
       border-bottom: 2px solid #E7272D;
+
+      @media (max-width: 575.98px) {
+           width: 200px;
+          }
     }
   }
   .said-brd{
@@ -781,23 +809,13 @@ input{
     bottom: 30px;
     left: 30px;
   }
-
-
-
   .food-img{
 
     @media (max-width: 767.98px) {
       margin-top: 30px;
     }
-   
-     
-    
   }
-   
-  
  }
-
-
 
   .hover-box{
     margin-bottom: 38px;
@@ -862,9 +880,15 @@ input{
         display: inline-block;
         width: 400px;
         border-top: 2px solid rgba(255, 255, 255, 0.30);
+        margin-left: 30px;
         /* responsiv */
         @media (max-width: 991.98px) {
           border: none;
+        }
+
+         @media (max-width: 575.98px) {
+          width: 200px;
+          
         }
       }
       /* responsiv */
