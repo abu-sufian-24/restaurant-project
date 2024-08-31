@@ -11,6 +11,12 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  @media (max-width: 575.98px) {
+    margin: 0;
+    padding: 0;
+  }
+}
 a{
   text-decoration: none;
 }
@@ -50,6 +56,10 @@ input{
     border-radius: 10px;
     margin-top: 15px;
     align-items: center;
+
+    @media (max-width: 575.98px) {
+      width: 340px;
+    }
   }
   .menu{
      a{
@@ -154,15 +164,27 @@ input{
   background-size: cover;
   padding-top: 105px;
   background-color: rgba(8, 0, 0, 0.50); 
+
+   /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+    @media (max-width: 575.98px) {
+        padding: 120px 0 30px;
+    }
  
   .banner-area{
+
+    /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            width: 280px;
+            height: 280px;
+        }
     padding-top: 120px;
     padding-bottom: 150px;
     h1{
       font-size: 145px;
 
       @media (max-width: 575.98px) {
-        font-size: 100px;
+        font-size: 80px;
+       
       }
       
     }
@@ -175,9 +197,12 @@ input{
       background-color: #E7272D;
       margin-left: 120px; 
 
-      @media (max-width: 575.98px) {
-        margin-left: 50px;
-      }
+         /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+            @media (max-width: 575.98px) {
+                font-size: 22px;
+                margin-left: 110px;
+                padding: 4px 20px;
+            }
   }
 
   p{
@@ -187,6 +212,10 @@ input{
       font-family: var(--body-font);
       color: #fff;
       margin: 20px 0;
+       /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+            @media (max-width: 575.98px) {
+                font-size: 14px;
+            }
 
     }
     span{
@@ -194,21 +223,27 @@ input{
       width: 235px;
       border-top: 2px solid #E7272D;
       margin-left: 30px;
+       /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+            @media (max-width: 575.98px) {
+                width: 108px;
+                margin-left: 16px;
+            }
     }
 
-    /* @media (max-width: 575.98px) {
-      width: 80%;
-      margin-left: 30px;
-    } */
-    @media only screen and (max-width: 600px) {
-      width: 100%;
+    @media (max-width: 575.98px) {
+      /* width: 80%; */
+      /* margin: 0; */
+      padding: 0;
     }
+   
 }
 }
 
 /* food idea area start */
 
 .food-idea{
+
+   
 
   .img-area{
 
@@ -222,8 +257,9 @@ input{
       border-radius: 100%;
 
       @media (max-width: 575.98px) {
-        width: 80%;
-        margin-left: 30px;
+       display: none;
+       margin: 0;
+       padding: 0;
       }
     }
     
@@ -238,9 +274,10 @@ input{
        padding-right: 40px; 
 
       } 
-       @media (max-width: 575.98px) {
-        margin-right: 50px;
-      }
+       /* @media (max-width: 575.98px) {
+       margin: 0;
+       padding: 0;
+      } */
   }
   .same-style{
     h2{
@@ -250,9 +287,11 @@ input{
        width: 500px;
       }
         @media (max-width: 575.98px) {
-       max-width: 300px;
+       max-width: 200px;
+       font-size: 32px;
+       line-height: 42px;
        padding: 0;
-       margin: 0;
+       text-align: center;
         
       }
       
@@ -267,16 +306,24 @@ input{
         line-height: 26px;
         font-family: var(--body-font);
         color: #666666;
+          /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            font-size: 14px;
+            margin-top: 15px;
+        }
       }
       
       /* responsive */
        @media (max-width: 1199.98px) {
-        width: 553px;
+        min-width: 400px;
         margin-left: 10px;
+      }
+      @media (max-width: 991.98px) {
+        width: 553px;
       }
     }
     .strong-tag{
-      width: 262px;
+      max-width: 262px;
       background-color: #1B1B1B;
       margin-left: 25px;
        padding: 10px 20px;
@@ -300,24 +347,17 @@ input{
         bottom: 0;
         left: 0;
       }
-      /* responsive */
-       @media (max-width: 1199.98px) {
-        width: 553px;
-       margin-top: 20px;
+      @media (max-width: 1199.98px) {
+        min-width: 400px;
+        margin-top: 20px;
       }
       @media (max-width: 991.98px) {
-       margin-top: 20px;
+        min-width: 553px;
       }
-       @media (max-width: 767.98px) {
-        width: 100%;
+      @media (max-width: 767.98px) {
+        min-width: 400px;
       }
-        /* @media (max-width: 575.98px) {
-       width: 80%;
-        
-      } */
-       @media only screen and (max-width: 600px) {
-        width: 100%;
-       }
+      
 
     }
 
@@ -335,6 +375,13 @@ input{
         @media (max-width: 1199.98px) {
         margin: 30px auto;
       }
+       @media (max-width: 991.98px) {
+      margin-left: 30px;
+       
+      }
+      @media (max-width: 767.98px) {
+       display: block;
+      }
 
       }
   }
@@ -342,9 +389,15 @@ input{
 /* foo menu area start */
 .food-menu{
 
+     /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+    @media (max-width: 575.98px) {
+        margin-top: 25px;
+    }
+
     h2{
       @media (max-width: 575.98px) {
-        margin-left: 30px;
+        /* margin-left: 30px; */
+        font-size: 28px;
       }
     }
 
@@ -353,7 +406,9 @@ input{
       margin: 30px auto;
       border: 1px solid #CCCCCC;
       border-radius: 10px;
+
      
+    
       li{
         display: flex;
         justify-content: center;
@@ -376,8 +431,10 @@ input{
           }
 
         @media (max-width: 575.98px) {
-          margin-left: 30px;
-        }
+          border: 1px solid  #CCCCCC;
+          margin-left: 100px;
+          
+         } 
         
       }
       /* responsive */
@@ -387,6 +444,8 @@ input{
       } 
         @media (max-width: 575.98px) {
           width: 300px;
+          margin: 0;
+          padding: 0;
           margin-bottom: 10px;
           
          } 
@@ -396,12 +455,10 @@ input{
        border: 1px solid #CCCCCC;
         border-radius: 10px;
         margin-top: 30px;
-        /* resfonsiv */
-        @media (max-width: 575.98px) {
-       width: 80%;
-       margin-left: 30px;
        
-      }
+       
+
+            
 
         .text-area{
 
@@ -421,10 +478,20 @@ input{
               font-weight: 700;
               font-family: var(--body-font);
               color: #1B1B1B;
+              
+                /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+                @media (max-width: 575.98px) {
+                    font-size: 14px;
+                }
             }
             i{
               margin-left: 30px;
             color: #E7272D;
+              
+                /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+                @media (max-width: 575.98px) {
+                    font-size: 14px;
+                }
             
             }
             span{
@@ -432,6 +499,11 @@ input{
               font-weight: 700;
               font-family: var(--body-font);
               color: #000000;
+              
+                /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+                @media (max-width: 575.98px) {
+                    font-size: 14px;
+                }
             }
           }
           h4{
@@ -440,6 +512,12 @@ input{
             font-family: var(--haddding-font);
             color: #000000;
             margin-left: 15px;
+            
+                /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+                @media (max-width: 575.98px) {
+                    font-size: 18px;
+                    margin-top: 23px;
+                }
           }
           .menu-box{
             p{
@@ -448,6 +526,10 @@ input{
               font-family: var(--body-font);
               color:#1B1B1B;
               margin-left: 15px;
+              /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+                        @media (max-width: 575.98px) {
+                            font-size: 14px;
+                        }
             
             }
             span{
@@ -457,6 +539,10 @@ input{
               background-color: #E7272D;
               border-radius: 50%;
               margin:0 0 10px 5px;
+              /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+                        @media (max-width: 575.98px) {
+                            font-size: 14px;
+                        }
             }
           }
           .last-box{
@@ -465,10 +551,17 @@ input{
               border: 1px solid #E7272D;
               border-radius: 50px;
               margin: 30px auto;
+                /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+                @media (max-width: 575.98px) {
+                  
+                    margin-top: 15px;
+                }
 
               i{
                 font-size: 22px;
                 color: #E7272D;
+                
+                       
                 }
 
               a{ 
@@ -510,20 +603,29 @@ input{
   background-size: cover;
   background-color: rgba(5, 0, 0, 0.35);
 
-    .favorite-text{
-      @media (max-width: 575.98px) {
-        width: 80%;
-        margin-left: 30px;
-      }
-    }
-    
     .same-style{
+        h2{
+           /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            font-size: 28px;
+            text-align: center;
+            line-height: 38px;
+        }
+        }
       p{
         font-size: 18px;
         font-weight: 400;
         font-family: var(--body-font);
         line-height: 28px;
         max-width: 550px;
+
+         /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 300;
+            text-align: center;
+        }
       }
     }
     .text-said{
@@ -534,6 +636,14 @@ input{
         font-family: var(--body-font);
         line-height: 28px;
         margin-top: 30px;
+         /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 0;
+            line-height: 10px;
+        }
       }
       p{
         font-size: 16px;
@@ -541,6 +651,11 @@ input{
         font-family: var(--body-font);
         padding: 0;
         margin: 0;
+        /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            font-size: 10px;
+            font-weight: 300;
+        }
       }
     }
 
@@ -552,10 +667,26 @@ input{
         input{
           padding: 12px 15px;
           border: 1px solid #E7E7E7;
+           /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+            @media (max-width: 575.98px) {
+                font-size: 14px;
+                width: 295px;
+                height: 50px;
+                margin: 15px auto 0;
+            }
         }
-        label{
+        select{
            padding: 12px 15px;
           border: 1px solid #E7E7E7;
+           /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+            @media (max-width: 575.98px) {
+              align-items: center;
+                font-size: 16px;
+                width: 295px;
+                height: 50px;
+                margin: 15px auto 0;
+            }
+
         }
       }
 
@@ -567,19 +698,21 @@ input{
         font-family: var(--body-font);
         color: #fff;
         background-color: #E7272D;
+        /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+            @media (max-width: 575.98px) {
+                font-size: 18px;
+                line-height: 24px;
+                font-weight: 700;
+               
+            }
        
       }
       /* responsive */
         @media (max-width: 991.98px) {
           margin-top: 30px;
         }
-        /* @media (max-width: 575.98px) {
-        width: 80%;
-        margin-left: 30px;
-      } */
-        @media only screen and (max-width: 600px) {
-        width: 100%;
-       }
+       
+        
     }
  } 
 
@@ -587,8 +720,22 @@ input{
 
  .food-gallery{
   padding-bottom: 50px ;
+
+  /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+    @media (max-width: 575.98px) {
+        margin-top: 40px;
+    }
+
   .same-style{
     margin-bottom: 50px;
+    h2{
+      /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+        @media (max-width: 575.98px) {
+            font-size: 28px;
+            margin-bottom: 24px;
+        }
+    }
+    }
   }
 
   .img-gallery{
@@ -612,15 +759,9 @@ input{
         transform: scale(1);
           border-radius: 0%; 
       }
-         /* @media (max-width: 575.98px) {
-          width: 80%;
-          margin-left: 30px;
-         }    */
-              @media only screen and (max-width: 600px) {
-        width: 100%;
-       }
+           
+        
     
-    }
   .food-contant{
 
     bottom: 35px;
@@ -641,37 +782,36 @@ input{
     left: 30px;
   }
 
+
+
   .food-img{
 
-    @media (max-width: 991.98px) {
+    @media (max-width: 767.98px) {
       margin-top: 30px;
     }
-    /* @media (max-width: 575.98px) {
-      width: 80%;
-      margin-left: 30px;
-    } */
-      @media only screen and (max-width: 600px) {
-        width: 100%;
-       }
+   
+     
     
   }
-   .img-box{
-      margin-bottom: 38px;
-    }
+   
   
  }
 
 
 
   .hover-box{
-      position: relative;        
+    margin-bottom: 38px;
+      position: relative; 
+      @media (max-width: 991.98px) {
+        margin-top: 30px;
+      }       
   }
 
 
  .hover-box::after{
   content: '';
-  width: 98%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 0;
   right: 0; 
@@ -720,7 +860,7 @@ input{
       padding: 60px 0;
       span{
         display: inline-block;
-        width: 475px;
+        width: 400px;
         border-top: 2px solid rgba(255, 255, 255, 0.30);
         /* responsiv */
         @media (max-width: 991.98px) {
@@ -736,22 +876,26 @@ input{
           padding-left: 160px;
           
         }
+        @media (max-width: 575.98px) {
+          padding: 0;
+          margin: 0;
+        }
       }
       
     }
 
     .full-area{
       @media (max-width: 575.98px) {
-        margin-left: 30px;
+        /* margin-left: 30px; */
+        margin: 0;
+        padding: 0;
       }
       .box-one{
-        /* @media (max-width: 575.98px) {
+        @media (max-width: 575.98px) {
         width: 80%;
-        margin-left: 30px;
-      } */
-           @media only screen and (max-width: 600px) {
-          width: 100%;
-        }
+        /* margin-left: 30px; */
+      }
+         
       }
       
     }
@@ -795,14 +939,12 @@ input{
       @media (max-width: 991.98px) {
         padding-left: 50px;
       }
-      /* @media (max-width: 575.98px) {
+      @media (max-width: 575.98px) {
         margin-top: 30px;
         width: 80%;
-        margin-left: 30px;
-      } */
-        @media only screen and (max-width: 600px) {
-        width: 100%;
-       }
+       
+      }
+        
     }
     ul{
       li{
@@ -821,14 +963,12 @@ input{
       @media (max-width: 991.98px) {
         margin-top: 30px;
       }
-      /* @media (max-width: 575.98px) {
+      @media (max-width: 575.98px) {
         margin-top: 0;
         width: 80%;
-        margin-left: 30px;
-      } */
-        @media only screen and (max-width: 600px) {
-        width: 100%;
-       }
+        
+      }
+        
     }
 
     .icon-area{
@@ -893,15 +1033,15 @@ input{
       @media (max-width: 575.98px) {
         margin-top: 30px;
         padding-left: 0;
-        /* width: 80%;
-        margin-left: 30px; */
+        width: 80%;
+       background-image: url(../images/image13.png);
       }
-        @media only screen and (max-width: 600px) {
-        width: 100%;
-       }
+        
       form{
         @media (max-width: 575.98px) {
-          margin-top: 0;
+          margin: 0;
+          padding: 0;
+          
         }
       }
     }
