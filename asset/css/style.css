@@ -195,6 +195,11 @@ input{
       border-top: 2px solid #E7272D;
       margin-left: 30px;
     }
+
+    @media (max-width: 575.98px) {
+      width: 80%;
+      margin-left: 30px;
+    }
 }
 }
 
@@ -499,6 +504,13 @@ input{
   background-size: cover;
   background-color: rgba(5, 0, 0, 0.35);
 
+    .favorite-text{
+      @media (max-width: 575.98px) {
+        width: 80%;
+        margin-left: 30px;
+      }
+    }
+    
     .same-style{
       p{
         font-size: 18px;
@@ -555,6 +567,10 @@ input{
         @media (max-width: 991.98px) {
           margin-top: 30px;
         }
+        @media (max-width: 575.98px) {
+        width: 80%;
+        margin-left: 30px;
+      }
     }
  } 
 
@@ -573,12 +589,20 @@ input{
         content: '';
         width: 95%;
         height: 100%;
-        left: auto;
-        top: auto;
-        background-color:rgba(0, 0, 0, 0.70);
         position: absolute;
+        /* left: 0;
+        right: 0;  */
+        transform: scale(0.1);
+        border-radius: 100%;
+        transition: all ease .7s;
         
       } 
+      &:hover::before{
+        background-color:rgba(0, 0, 0, 0.70);
+        opacity: 0.9; 
+        transform: scale(1);
+          border-radius: 0%; 
+      }
          @media (max-width: 575.98px) {
           width: 80%;
           margin-left: 30px;
@@ -604,8 +628,8 @@ input{
     bottom: 30px;
     left: 30px;
   }
+
   .food-img{
-   
 
     @media (max-width: 991.98px) {
       margin-top: 30px;
@@ -614,10 +638,61 @@ input{
       width: 80%;
       margin-left: 30px;
     }
+    
   }
    .img-box{
       margin-bottom: 38px;
     }
+  
+ }
+
+
+
+  .hover-box{
+      position: relative;        
+  }
+
+
+ .hover-box::after{
+  content: '';
+  width: 98%;
+  height: 90%;
+  position: absolute;
+  left: 0;
+  right: 0; 
+  transform: scale(0.1);
+  border-radius: 100%;
+  transition: all ease .7s;
+ }
+
+ .hover-box:hover::after{
+   background-color:rgba(0, 0, 0, 0.70);
+   opacity: 0.7; 
+   transform: scale(1);
+    border-radius: 0%; 
+  
+ }
+
+ .hover-box-two{
+   position: relative;  
+ }
+
+ .hover-box-two::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0; 
+  transform: scale(0.1);
+  border-radius: 100%;
+  transition: all ease .7s;
+ }
+ .hover-box-two:hover::after{
+   background-color:rgba(0, 0, 0, 0.70);
+   opacity: 0.7; 
+   transform: scale(1);
+    border-radius: 0%; 
   
  }
 
@@ -654,6 +729,13 @@ input{
       @media (max-width: 575.98px) {
         margin-left: 30px;
       }
+      .box-one{
+        @media (max-width: 575.98px) {
+        width: 80%;
+        margin-left: 30px;
+      }
+      }
+      
     }
 
     h4{
@@ -697,6 +779,8 @@ input{
       }
       @media (max-width: 575.98px) {
         margin-top: 30px;
+        width: 80%;
+        margin-left: 30px;
       }
     }
     ul{
@@ -718,6 +802,8 @@ input{
       }
       @media (max-width: 575.98px) {
         margin-top: 0;
+        width: 80%;
+        margin-left: 30px;
       }
     }
 
@@ -783,6 +869,8 @@ input{
       @media (max-width: 575.98px) {
         margin-top: 30px;
         padding-left: 0;
+        width: 80%;
+        margin-left: 30px;
       }
       form{
         @media (max-width: 575.98px) {
