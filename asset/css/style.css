@@ -92,6 +92,9 @@ input{
     position: relative;
     i{
       font-size: 30px;
+      @media (max-width: 575.98px) {
+        margin-left: 20px;
+      }
     }
   }
    
@@ -105,6 +108,10 @@ input{
     position: absolute;
     right: -8px;
     top: -8px;
+      
+      @media (max-width: 575.98px) {
+        display: none;
+      }
     
     }
 
@@ -114,6 +121,10 @@ input{
     height: 18px;
     border-left: 2px solid rgba(0, 0, 0, 0.30);
       margin:0 30px;
+
+      @media (max-width: 575.98px) {
+        display: none;
+      }
     
   }
   .top-border{
@@ -121,6 +132,10 @@ input{
     border-top: 3px solid #020000; 
     padding: 3px 0;
     margin-left: auto;
+
+    @media (max-width: 575.98px) {
+      display: none;
+    }
   }
   
   .middle-border{
@@ -128,12 +143,20 @@ input{
     border-top: 3px solid #020000;
     padding: 3px 0;
      margin-left: auto;
+
+     @media (max-width: 575.98px) {
+      display: none;
+     }
   }
   .boton-border{
     width: 24px;
     border-top: 3px solid #020000;
     padding: 3px 0;
    margin-left: auto;
+
+   @media (max-width: 575.98px) {
+    display: none;
+   }
   }
 
     /* another method */
@@ -284,9 +307,9 @@ input{
        width: 500px;
       }
         @media (max-width: 575.98px) {
-       max-width: 200px;
-       font-size: 32px;
-       line-height: 42px;
+       max-width: 270px;
+       font-size: 28px;
+       line-height: 38px;
        padding: 0;
        text-align: center;
         
@@ -433,6 +456,7 @@ input{
         margin-top: 15px;
         padding: 0;
         flex-wrap: wrap;
+        transition: all ease .7s;
 
         &:hover{
             background-color: #E7272D;
@@ -442,7 +466,7 @@ input{
 
          @media (max-width: 575.98px) {
           border: 1px solid  #CCCCCC;
-          margin-left: 60px;
+          margin-left: 80px;
           font-size: 14px;
           
          }
@@ -562,6 +586,7 @@ input{
               border: 1px solid #E7272D;
               border-radius: 50px;
               margin: 30px auto;
+              transition: all ease .7s;
                 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
                 @media (max-width: 575.98px) {
                   
